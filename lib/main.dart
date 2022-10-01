@@ -1,4 +1,4 @@
-import 'package:email_validation/hive_repository/box_repository.dart';
+import 'hive_repository/box_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'screen/my_home_page.dart';

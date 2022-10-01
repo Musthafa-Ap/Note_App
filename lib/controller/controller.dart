@@ -1,5 +1,5 @@
-import 'package:email_validation/hive_repository/box_repository.dart';
-import 'package:email_validation/model/note_model.dart';
+import 'package:note_app/hive_repository/box_repository.dart';
+import 'package:note_app/model/note_model.dart';
 import 'package:get/state_manager.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 

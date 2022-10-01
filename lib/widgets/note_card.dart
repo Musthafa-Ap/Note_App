@@ -17,22 +17,22 @@ class NoteCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(10),
       child: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Stack(
             children: [
               Container(
-                padding: EdgeInsets.only(top: 19),
+                padding: const EdgeInsets.only(top: 19),
                 width: double.infinity,
                 height: MediaQuery.of(context).size.width * .16,
-                color: Color.fromARGB(227, 29, 35, 29),
+                color: const Color.fromARGB(227, 29, 35, 29),
                 child: Text(
                   note.title,
-                  style: TextStyle(
+                  style: const TextStyle(
                       color: Colors.white,
                       fontSize: 25,
                       fontWeight: FontWeight.bold),
@@ -46,7 +46,7 @@ class NoteCard extends StatelessWidget {
                       onPressed: () {
                         DiologScreen(index: index, note: note);
                       },
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.edit,
                         color: Colors.white,
                       )))
@@ -55,14 +55,14 @@ class NoteCard extends StatelessWidget {
           Stack(
             children: [
               Container(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 width: double.infinity,
-                height: MediaQuery.of(context).size.width * .3,
-                color: Color.fromARGB(255, 43, 43, 41),
+                height: MediaQuery.of(context).size.width * .4,
+                color: const Color.fromARGB(255, 43, 43, 41),
                 child: Text(
                   note.content,
-                  style: TextStyle(
-                      overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(
+                      //overflow: TextOverflow.ellipsis,
                       color: Colors.white,
                       fontSize: 25),
                 ),
@@ -74,13 +74,13 @@ class NoteCard extends StatelessWidget {
                       onPressed: () {
                         Get.find<NoteController>().deleteNote(index: index);
                       },
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.delete,
                         color: Colors.red,
                       )))
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 5,
           )
         ],

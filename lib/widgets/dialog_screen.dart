@@ -1,4 +1,4 @@
-import 'package:email_validation/controller/controller.dart';
+import 'package:note_app/controller/controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../screen/my_home_page.dart';
@@ -14,22 +14,23 @@ Future<dynamic> DiologScreen({int? index, NoteModel? note}) {
   }
 
   return Get.defaultDialog(
+    title: "Note",
     content: Column(
       children: [
         TextFormField(
           controller: titleController,
-          decoration:
-              InputDecoration(hintText: "Title", border: OutlineInputBorder()),
+          decoration: const InputDecoration(
+              hintText: "Title", border: OutlineInputBorder()),
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
         TextFormField(
           controller: contentController,
-          decoration: InputDecoration(
+          decoration: const InputDecoration(
               hintText: "Content", border: OutlineInputBorder()),
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
       ],
@@ -41,7 +42,7 @@ Future<dynamic> DiologScreen({int? index, NoteModel? note}) {
           onPressed: () {
             Get.back();
           },
-          child: Text("Cancel")),
+          child: const Text("Cancel")),
       ElevatedButton(
           onPressed: () {
             final _title = titleController.text;

@@ -1,5 +1,6 @@
-import 'package:email_validation/model/note_model.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+
+import '../model/note_model.dart';
 
 class BoxRepository {
   static const String boxName = "Note";
