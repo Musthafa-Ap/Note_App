@@ -1,4 +1,4 @@
-# email_validation
+# note_app
 
 A new Flutter project.
 
